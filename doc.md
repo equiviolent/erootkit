@@ -11,12 +11,12 @@
 Most of the rootkits used in the malware attacks have almost the same behaviour (hiding and hooking) as a normal process running in the system.
 
 ### Some ways:
-	1. [Syscal table hijacking - a good old way.](#Syscall-table-hijacking)
-	2. [Sys_close - Brute force method.](#Sys-close)
-	3. [VFS hooking.](#VFS-hooking)
-	4. [The ftrace helper method.](#Thee-ftrace-helper-method)
+1. [Syscal table hijacking - a good old way.](#Syscall-table-hijacking)
+2. [Sys_close - Brute force method.](#Sys-close)
+3. [VFS hooking.](#VFS-hooking)
+4. [The ftrace helper method.](#Thee-ftrace-helper-method)
 
-#### Syscall table hijacking
+## Syscall table hijacking
 ** [LKM](https://en.wikipedia.org/wiki/Loadable_kernel_module) - Loadable Kernel Module **
 Before digging deep, I would like to describe some basic concepts. LKM is an object file that can be inserted into a running kernel. This is largely used for expanding the Kernel's functionality (device drivers, filesystem, etc.).
 Another use could be creating a rootkit that will operate inside the kernel.
